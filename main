@@ -35,7 +35,7 @@ void main() {
     pos = rotY * pos;
     
     // 太陽の表面効果
-    float noise = sin(phi * 10.0 + time) * sin(theta * 10.0 + time) * 0.05;
+    float noise = sin(phi * 10.0 + time) * sin(theta * 0 + time) * 1.2;
     pos += pos * noise;
     
     gl_Position = vec4(pos.xy, pos.z * 0.5 + 0.5, 1);
